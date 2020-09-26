@@ -1,8 +1,7 @@
 FROM gitpod/workspace-full
 
-RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && sdk install java 12.0.1-adpt"
-             
-USER gitpod
+RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
+             && sdk install java 11.0.8.j9-adpt"
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
