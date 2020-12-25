@@ -8,5 +8,5 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
 
 RUN DEBIAN_FRONTEND=noninteractive && \
     sudo apt-get -q update && \
-    sudo apt-get install -y bastet cmatrix && \
+    sudo apt-get install -y bastet && \
     sudo rm -rf /var/lib/apt/lists/*
