@@ -6,6 +6,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
 # Install custom tools, runtime, etc. using apt-get
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN sudo apt-get -q update && \
+RUN DEBIAN_FRONTEND=noninteractive && \
+    sudo apt-get -q update && \
     sudo apt-get install -y bastet cmatrix && \
     sudo rm -rf /var/lib/apt/lists/*
